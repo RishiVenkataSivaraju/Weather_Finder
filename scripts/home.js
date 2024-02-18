@@ -16,7 +16,8 @@ let map = new mapboxgl.Map({
 });
 map.on('click', async (e) => {
     let lngLat = e.lngLat;
-    const res = await axios.get(`https://api.open-meteo.com/v1/forecast?latitude=${lngLat.lat}&longitude=${lngLat.lng}&hourly=temperature_2m`)
-    console.log(res.data)
-    console.log('Longitude: ' + lngLat.lng + ', Latitude: ' + lngLat.lat);
+    let lat = lngLat.lat;
+    let lon = lngLat.lng;
+    let res = await axios.get(`http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=bb5de4977205403a59132f425bfb51a2&units=metric`);
+    console.log(res.data.main.temp)
 });
