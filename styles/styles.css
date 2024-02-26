@@ -131,6 +131,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
+  background-color: #020d19;
 }
 
 h1 {
@@ -139,6 +140,7 @@ h1 {
   text-align: center;
   margin-top: 2%;
   margin-bottom: -0%;
+  color: white;
 }
 #map {
   margin-left: 5%;
@@ -146,6 +148,7 @@ h1 {
   height: 600px;
   width: 50%;
   border-radius: 20px;
+  /* border: 1px solid white; */
 }
 div:hover {
   cursor: pointer !important;
@@ -153,10 +156,12 @@ div:hover {
 .info {
   width: 30%;
   height: 400px;
-  background-color: rgb(247, 247, 217);
+  /* background-color: rgb(247, 247, 217); */
+  background-color: #0d55b3;
+  color: white;
   margin-top: 10%;
   margin-right: 10%;
-  border-radius: 20px;
+  border-radius: 15px;
   font-size: medium;
   font-style: italic;
 }

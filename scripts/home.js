@@ -29,11 +29,11 @@ map.on('click', async (e) => {
     console.log(Temperature)
     const view = document.createElement("p")
     const temp = document.createElement("p")
-    temp.innerHTML = `Temperature:${Temperature}`
+    temp.innerHTML = `Temperature: ${Temperature}`
     const weathers = document.createElement("p")
-    weathers.innerHTML = `<p style="margin-bottom:2%;">Weather:${weather}</p>`
+    weathers.innerHTML = `<p style="margin-bottom:2%;">Weather: ${weather}</p>`
     const loc = document.createElement("p")
-    loc.innerHTML = `<p style="margin-bottom:20px;">Location:${locality}</p><hr>`
+    loc.innerHTML = `<p style="margin-bottom:20px;">Location: ${locality}</p><hr>`
     view.append(temp, weathers, loc)
     info.append(view)
     temp.classList.add("margin-inbetween");
@@ -45,7 +45,7 @@ map.on('style.load', () => {
     color: 'rgb(186, 210, 235)', // Lower atmosphere
     'high-color': 'rgb(36, 92, 223)', // Upper atmosphere
     'horizon-blend': 0.02, // Atmosphere thickness (default 0.2 at low zooms)
-    'space-color': 'rgb(11, 11, 25)', // Background color
-    'star-intensity': 0.6 // Background star brightness (default 0.35 at low zoooms )
+    'space-color': '#020d19', // Background color
+    'star-intensity': 0 // Background star brightness (default 0.35 at low zoooms )
   });
 });
